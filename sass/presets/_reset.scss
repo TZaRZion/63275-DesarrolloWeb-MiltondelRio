@@ -1,0 +1,36 @@
+/**Estilos globales**/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /*desplazamiento (scrolling) suave*/
+    font-family: Helvetica, sans-serif;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#body {
+    background-color: #ececec;
+}
+
+/**Estilos para el main**/
+
+#main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.mainFrente {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

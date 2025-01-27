@@ -1,0 +1,339 @@
+@charset "UTF-8";
+/**Estilos globales**/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /*desplazamiento (scrolling) suave*/
+  font-family: Helvetica, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#body {
+  background-color: #ececec;
+}
+
+/**Estilos para el main**/
+#main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.mainFrente {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/**Estilos para la barra de navegacion**/
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3d3d3d;
+  /* Color de fondo */
+  opacity: 0.9;
+  padding: 10px;
+  /* Espaciado interno */
+  width: 100%;
+  /* Ocupa el 100% del ancho */
+  position: fixed;
+  /* Fijar el nav */
+  top: 0;
+  /* Ajustar al borde superior */
+  left: 0;
+  /* Ajustar al borde izquierdo */
+  z-index: 1000;
+  /* Asegurar que el nav esté encima de otros elementos */
+}
+
+.navBar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  /* Sacar viñetas */
+  padding: 0;
+  /* Quitar padding */
+  margin: 0;
+  /* Quitar margen */
+}
+
+.navBar li {
+  margin-right: 20px;
+  /* Espacio entre los elementos */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.navBar a {
+  color: #D6D6D6;
+  /* Color del texto */
+}
+
+.logoNav {
+  width: 50px;
+  /* Ancho de la imagen */
+  height: auto;
+  /* Mantener la proporción de la imagen */
+}
+
+.telNum {
+  background-color: coral;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 550;
+}
+
+/**Estilos para el footer**/
+#footer {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  background-color: #000000;
+  align-items: center;
+  width: 100%;
+  height: 350px;
+  margin-top: auto;
+}
+
+.footerLogo img {
+  width: 65px;
+  height: auto;
+}
+
+.footerNav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #D6D6D6;
+}
+
+.footerNav a {
+  color: #D6D6D6;
+}
+
+.footerNavCopy {
+  font-size: 2px;
+  margin-top: 20px;
+}
+
+.footerRedes {
+  color: #D6D6D6;
+}
+
+@media screen and (max-width: 760px) {
+  /*MEDIA DE PAGE INTERNACIÓN*/
+  #main .grid_contenedor1 {
+    grid-template-columns: 1fr;
+  }
+  /*MEDIA PAGE INDEX*/
+  #main .introMain2_parrafo {
+    flex-direction: column;
+  }
+  #main .introMain2_parrafo p {
+    width: 100%;
+  }
+}
+/**Estilos para Centros de tratamiento de adicciones**/
+.introMain {
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.introMain p {
+  margin-top: 20px;
+}
+
+.introMain h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.lineaNegra {
+  margin-top: 24px;
+  width: 70px;
+  /* Ancho de la línea */
+  height: 3px;
+  /* Altura de la línea */
+  background-color: black;
+  margin: 50px auto 0 auto;
+}
+
+/**Estilos para bloque de fotos**/
+.imgMain {
+  width: 100%;
+  height: 400px;
+  filter: blur(2px);
+  object-fit: cover;
+}
+
+.bloque {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 10px;
+  width: 100%;
+  /* Ajustar el tamaño para tener cuatro bloques en línea */
+  text-align: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.bloque_completo {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  height: auto;
+  padding: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.bloque h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.bloque p {
+  font-size: 14px;
+  width: 200px;
+}
+
+/**Estilos para ¿Está usted, un amigo o un familiar con problemas de consumo**/
+.introMain2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: #b8b5b5;
+  min-height: 60vh;
+}
+
+h2 {
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.introMain2_parrafo {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  width: 100%;
+  padding: 0 10px;
+  column-gap: 5%;
+}
+.introMain2_parrafo p {
+  margin-top: 20px;
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+.internacionSec1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+
+.grid_contenedor1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  gap: 100px;
+  height: auto;
+  padding: 20px;
+  max-width: 1200px;
+  text-align: justify;
+}
+
+.grid_contenedor1 p {
+  margin-top: 20px;
+}
+
+.grid_contenedor1 h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.tratamientoSec1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 300px;
+}
+
+.tratamientoSec1 p {
+  max-width: 1200px;
+  margin: 50px auto 0 auto;
+}
+
+.tratamientoSec1 h2 {
+  max-width: 1200px;
+  margin: 50px auto 0 auto;
+  text-transform: uppercase;
+}
+
+/**Estilos para Contactos**/
+.contact-info h2 {
+  color: #35424a;
+  margin-top: 100px;
+}
+
+.contact-info p,
+.contact-info a {
+  font-size: 16px;
+}
+
+.map {
+  width: 100%;
+  height: 500px;
+  margin-top: 100px;
+}
+
+.grid-item:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.grid-item:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.grid-item:nth-child(3) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.grid-item:nth-child(4) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/*# sourceMappingURL=style.css.map */

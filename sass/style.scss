@@ -1,0 +1,30 @@
+@use "presets/reset";
+@use "presets/header";
+@use "presets/footer";
+@use "presets/queries";
+
+@use "sass-pages/index"; 
+@use "sass-pages/internacion-tratamiento"; 
+@use "sass-pages/contacto"; 
+
+.grid-item:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.grid-item:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+
+}
+
+.grid-item:nth-child(3) {
+    grid-column: 2;
+    grid-row: 1;
+
+}
+
+.grid-item:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
+}

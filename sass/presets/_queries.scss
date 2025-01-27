@@ -1,0 +1,14 @@
+@media screen and (max-width: 760px){
+    /*MEDIA DE PAGE INTERNACIÓN*/
+    #main .grid_contenedor1 {
+        grid-template-columns: 1fr;
+    }
+
+    /*MEDIA PAGE INDEX*/
+    #main .introMain2_parrafo {
+        flex-direction: column;
+        p {
+            width: 100%;
+        }
+    }
+}  
